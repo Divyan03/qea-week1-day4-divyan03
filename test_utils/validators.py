@@ -45,17 +45,16 @@ def is_strong_password(password, min_length=8):
     if len(password) < min_length:
         return False
     
-    upper, lower, digit = False
+    upper, lower, digit = False, False, False
     
-    for c in str(password):
-        pass
-        # if c.isdigit() == False:
-        #     if c.upper() == c:
-        #         upper = True
-        #     if c.lower() == c:
-        #         lower = True
-        # else:
-        #     digit = True
+    for c in password:
+        if c.isdigit() == False:
+            if c.upper() == c:
+                upper = True
+            if c.lower() == c:
+                lower = True
+        else:
+            digit = True
 
     return upper and lower and digit 
 
@@ -73,4 +72,8 @@ def all_pass(value, *checks):
     Example: all_pass("TC-001", is_valid_test_id, lambda s: s.endswith("1"))
     """
     # TODO: loop over `checks`; return False as soon as one fails; return True after the loop
-    pass
+    for c in checks:
+        if c(value) == False:
+            return False
+
+    return True
