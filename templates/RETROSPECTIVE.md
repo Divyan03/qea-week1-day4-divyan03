@@ -14,7 +14,7 @@ Fill one row per 30-minute block (add rows if you swapped more often).
 
 | Block | Minutes | Driver | Navigator | What we built | Last commit hash (short) |
 |---|---|---|---|---|---|
-| 1 | 0-30 | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] |
+| 1 | 0-30 | Fahad  | Divyan | Block 1 and is_valid_email from Block 2 | [WRITE HERE] |
 | 2 | 30-60 | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] |
 | 3 | 60-90 | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] |
 | 4 | 90-120 | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] | [WRITE HERE] |
