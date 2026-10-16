@@ -37,13 +37,33 @@ def generate_password(length=12, seed=None):
     that always contains an uppercase letter, a lowercase letter and a digit.
     FOR TEST DATA ONLY: random is not secure."""
     # TODO: rng; start with one upper, one lower, one digit; fill up with a loop; rng.shuffle; join
-    pass
+    rng = random.Random(seed)
+    characters = string.ascii_letters
+    digits = string.digits
+    randChars = characters + digits
+    password = []
+
+    password.append(rng.choice(characters).upper())    # uppercase letter
+    password.append(rng.choice(characters).lower())   # lowercase letter
+    password.append(rng.choice(digits))               # digit
+
+    for _ in range(length-3):
+        password.append(rng.choice(randChars))
+
+    return "".join(password) 
+    
+
+
+
+    
 
 
 def generate_test_id(number, prefix="TC", digits=3):
     """Return a zero-padded test ID: generate_test_id(7) -> 'TC-007'."""
     # TODO: str(number), then pad with '0' * (digits - len(text))
-    pass
+    test_num = f"{number:0{digits}}"
+    return prefix + '-' + test_num
+    
 
 
 def make_test_case(test_id, name, **options):
@@ -54,6 +74,7 @@ def make_test_case(test_id, name, **options):
     """
     # TODO: build the defaults dict, then case.update(options); return case
     pass
+    
 
 
 def generate_test_cases(count, seed=None):
