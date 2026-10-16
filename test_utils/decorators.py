@@ -21,8 +21,9 @@ def timer(func):
         timenote = time.perf_counter()
         result = func(*args, **kwargs)
         timenote2 = time.perf_counter()
-        print(f"{timenote} and {timenote2} and {timenote2 - timenote}")
         elapsed = timenote2 - timenote
         TIMING_LOG.append((func.__name__, elapsed))
+        print(f"{func.__name__} took {elapsed} seconds.")
+        return result
 
-    return wrapper(func)
+    return wrapper
