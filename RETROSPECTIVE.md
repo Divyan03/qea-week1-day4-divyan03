@@ -1,7 +1,7 @@
 # Pair Retrospective: test_utils library
 
 Copy this file to the ROOT of your shared repo as `RETROSPECTIVE.md`, fill in EVERY section
-(replace each `[WRITE HERE]`), and commit it on your shared branch. Write it together:
+(replace each --), and commit it on your shared branch. Write it together:
 one person types, the other dictates, then swap for the last two sections.
 
 - Pair members: Divyan Varatharaj, Fahad Hussain
@@ -25,12 +25,12 @@ Fill one row per 30-minute block (add rows if you swapped more often).
 The navigator and driver were able to brainstorm very effectively. The navigator was also able to catch mistakes the driver initially does not notice. For example, driver used syntax to get object attribute to get the value of a dictionary key. Navigator would notice and tell them to correct it.
 
 ## 3. What was difficult?
-- Technically: [WRITE HERE]
-- As a team (communication, pace, disagreement, git hand-offs): [WRITE HERE]
+- Technically: Syntax errors from using numerous different functions and parameters across different files and parts of the codebase.
+- As a team (communication, pace, disagreement, git hand-offs): Pace was fast, keeping organized and on the same page with existing codebase. 
 
 ## 4. What did each of us learn from the other?
-- [Name 1] learned from [Name 2]: [WRITE HERE]
-- [Name 2] learned from [Name 1]: [WRITE HERE]
+- Fahad learned from Divyan: How to use the random library properly.
+- Divyan learned from Fahad: When to use the defaultdict vs normal dictionary.
 
 ## 5. Our code
 - The function we are proudest of, and why: The function we are most proud of is build_demo_report. This is due to the variety of different functions we had to utilize.
@@ -38,13 +38,15 @@ The navigator and driver were able to brainstorm very effectively. The navigator
 - One bug we hit and how we found it (error message, what we tried, the fix): TypeError: unsupported operand type(s) for +: 'function' and 'int'. This bug was from decorators.py. The fix was that we were not returning correctly. We changed the return wrapper(func) to return wrapper
 
 ## 6. Git collaboration
-- Did every swap follow commit, push, pull? What went wrong when we skipped a step? [WRITE HERE]
-- Did we get a merge conflict? How did we resolve it (or why not)? [WRITE HERE]
-- Output of `git shortlog -sne` (paste): [WRITE HERE]
+- Did every swap follow commit, push, pull? What went wrong when we skipped a step? Yes, we stayed on track with the git process. Committed with the co-author reference, pushed, pulled, and ran check_exercise.py on the new driver to confirm everything transferred over correctly.
+- Did we get a merge conflict? How did we resolve it (or why not)? Nope, we didn't get any.
+- Output of `git shortlog -sne` (paste): 
+     6  Divyan03 <111556193+Divyan03@users.noreply.github.com>
+     4  FahadH31 <129327022+FahadH31@users.noreply.github.com> 
 
 ## 7. Next time
-- Two things we would do differently: [WRITE HERE]
-- Self-rating, 1 (poor) to 5 (excellent): communication [WRITE HERE], keeping to the swap timer [WRITE HERE], understanding every line [WRITE HERE]
+- Two things we would do differently: 1. switch over in more natural blocks rather than set time 2.Add the <> when referencing each other's emails in the commit message so it properly shows the co-authoring of all the commits. 
+- Self-rating, 1 (poor) to 5 (excellent): communication 5, keeping to the swap timer 5, understanding every line 5
 
 ## 8. Final check
-Paste the last lines of `python3 check_exercise.py` (the "x/y checks passed" line): [WRITE HERE]
+Paste the last lines of `python3 check_exercise.py` (the "x/y checks passed" line): 20/20 checks passed
