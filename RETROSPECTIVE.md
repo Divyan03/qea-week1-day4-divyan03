@@ -4,9 +4,9 @@ Copy this file to the ROOT of your shared repo as `RETROSPECTIVE.md`, fill in EV
 (replace each `[WRITE HERE]`), and commit it on your shared branch. Write it together:
 one person types, the other dictates, then swap for the last two sections.
 
-- Pair members: [WRITE HERE]
-- Repository / branch / PR link: [WRITE HERE]
-- Date and total time spent: [WRITE HERE]
+- Pair members: Divyan Varatharaj, Fahad Hussain
+- Repository / branch / PR link: https://github.com/Divyan03/qea-week1-day4-divyan03/tree/feature/test-utils
+- Date and total time spent: October 16, 2026. Time Spent: 2 hours 10 minutes
 
 ## 1. Role-swap log
 
@@ -22,7 +22,7 @@ Fill one row per 30-minute block (add rows if you swapped more often).
 | 6 | 120-130 | Divyan  | Fahad | Complete demo_report.py | 3d32bd6 |
 
 ## 2. What went well in how we worked together?
-[WRITE HERE] (give one concrete example, e.g. "the navigator spotted that `<=` was needed in `is_in_range`")
+The navigator and driver were able to brainstorm very effectively. The navigator was also able to catch mistakes the driver initially does not notice. For example, driver used syntax to get object attribute to get the value of a dictionary key. Navigator would notice and tell them to correct it.
 
 ## 3. What was difficult?
 - Technically: [WRITE HERE]
@@ -33,9 +33,9 @@ Fill one row per 30-minute block (add rows if you swapped more often).
 - [Name 2] learned from [Name 1]: [WRITE HERE]
 
 ## 5. Our code
-- The function we are proudest of, and why: [WRITE HERE]
-- The function that most needs improvement, and how: [WRITE HERE]
-- One bug we hit and how we found it (error message, what we tried, the fix): [WRITE HERE]
+- The function we are proudest of, and why: The function we are most proud of is build_demo_report. This is due to the variety of different functions we had to utilize.
+- The function that most needs improvement, and how: The function that needs the most improvement is the is_strong_password due to unnecessary checks.
+- One bug we hit and how we found it (error message, what we tried, the fix): TypeError: unsupported operand type(s) for +: 'function' and 'int'. This bug was from decorators.py. The fix was that we were not returning correctly. We changed the return wrapper(func) to return wrapper
 
 ## 6. Git collaboration
 - Did every swap follow commit, push, pull? What went wrong when we skipped a step? [WRITE HERE]
